@@ -1,0 +1,104 @@
+{
+  "ir_hash": "sha256:77d7779a2f1642556a0ca82557e98dcd0c4e44c76b1e16fe8f3774c13ac3c7c5",
+  "manifest_schema_version": 1,
+  "package": "csh-superconductivity",
+  "premises": [
+    {
+      "content": "Van der Marel and Hirsch (arXiv:2201.07686, 2022) performed a detailed statistical analysis of the magnetic susceptibility data in Snider et al. Their key finding: the published data are compatible with a REVERSED procedure in which a background signal was ADDED to a predetermined superconducting-like result, rather than subtracted from raw measurements. The 'measured voltage' data presented as raw data appeared to be artificially constructed.",
+      "content_hash": "bc7202bfab53aa515fba3ec0b9f2d06f646fec3ee7393c56ed95bace4fba0f40",
+      "exported": false,
+      "interface_hash": "sha256:43c8fd998a3218fb320525f3003f5ce104ced534a70c405282c37490dae56084",
+      "label": "background_subtraction_fraud",
+      "qid": "github:csh_superconductivity::background_subtraction_fraud",
+      "required_by": [
+        "github:csh_superconductivity::susceptibility_data_invalid"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "A subsequent paper by Ranga Dias's group claiming superconductivity in nitrogen-doped lutetium hydride (Nature 2023) was also retracted. Dias faced investigations for data integrity issues across multiple publications, establishing a pattern of questionable data practices.",
+      "content_hash": "21083a79fbd69fab9a88101437619e73456d68402dfbf3be047af105df676d3e",
+      "exported": false,
+      "interface_hash": "sha256:8c3d3b856238bcbc5bdc786c00066a6ebfefc85d1eae0f49accdda4b485ba365",
+      "label": "dias_broader_issues",
+      "qid": "github:csh_superconductivity::dias_broader_issues",
+      "required_by": [
+        "github:csh_superconductivity::susceptibility_data_invalid"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "The Eremets group at the Max Planck Institute spent 6 months attempting to replicate the C-S-H results. They observed superconductivity in some C-S-H samples only up to approximately 200 K — far below the claimed 287.7 K room-temperature Tc. This is consistent with conventional hydride superconductivity in the pressure range but NOT with the room-temperature claims.",
+      "content_hash": "2df37396a035cc2e6e796829d7ba5ac08dd18448050ee40ff7f959f1f61e6ca1",
+      "exported": false,
+      "interface_hash": "sha256:abf657e2511692e8dabc87f274dbea2b7d548581287a2e18680bd638c0390f73",
+      "label": "eremets_failed_replication",
+      "qid": "github:csh_superconductivity::eremets_failed_replication",
+      "required_by": [
+        "github:csh_superconductivity::rtsc_not_confirmed"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "Application of external magnetic fields suppressed the superconducting transition temperature, consistent with the expected behavior of a type-II superconductor. The upper critical field Hc2(0) was estimated from the field-dependent Tc measurements.",
+      "content_hash": "10b52475bdaa3921dd3a67854d52c0858186dd01d32dc479f3fbc6cff47d8395",
+      "exported": false,
+      "interface_hash": "sha256:f094b8b831e845b386d83376582c323e0b9e3f756b2ecc13428affe653a2df20",
+      "label": "field_suppression",
+      "qid": "github:csh_superconductivity::field_suppression",
+      "required_by": [
+        "github:csh_superconductivity::original_sc_claim"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "The Goncharov group at the Carnegie Institution could not synthesize any C-S-H compound undergoing the structural transition at the pressure claimed by Snider et al. They were unable to reproduce even the starting material conditions for the claimed room-temperature superconductor.",
+      "content_hash": "73cebb732cc674dc7a4838e5da78ad6377bbe71162cb290dfa6cdffaff9c3486",
+      "exported": false,
+      "interface_hash": "sha256:09e603a0c139fd612cb3cd4050c50e1bd35b77519ca19acba903feba5deebbe9",
+      "label": "goncharov_failed_replication",
+      "qid": "github:csh_superconductivity::goncharov_failed_replication",
+      "required_by": [
+        "github:csh_superconductivity::rtsc_not_confirmed"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "Carbon-13 isotope substitution (13C for 12C) showed a shift in Tc that the authors claimed was consistent with the BCS isotope effect, suggesting phonon-mediated superconductivity with carbon phonon modes contributing to the pairing mechanism.",
+      "content_hash": "3c7aea5128f1e14bcb5e019e905ab9ea342f0c204f8486992dfb067479a4d09a",
+      "exported": false,
+      "interface_hash": "sha256:15a6bea40df0fa5874adb76da8542e150820b1c7127b9a64aa4f62de13625503",
+      "label": "isotope_effect_observed",
+      "qid": "github:csh_superconductivity::isotope_effect_observed",
+      "required_by": [
+        "github:csh_superconductivity::original_sc_claim"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "Four-probe electrical resistance measurements in the DAC showed sharp drops to zero resistance at multiple pressures in the C-S-H system. The maximum transition temperature observed was Tc = 287.7 +/- 1.2 K (approximately 15 C) at 267 +/- 10 GPa — room temperature.",
+      "content_hash": "ff174d32bd1c4056acef217076e8fa447826e34ce7084ca8bdc1308afda25581",
+      "exported": false,
+      "interface_hash": "sha256:d0bfd0736c17dfe0278ba76086f6625ae81c7fd9449638b647652c8e9869fc54",
+      "label": "resistance_observation",
+      "qid": "github:csh_superconductivity::resistance_observation",
+      "required_by": [
+        "github:csh_superconductivity::original_sc_claim"
+      ],
+      "role": "local_hole"
+    },
+    {
+      "content": "AC magnetic susceptibility measurements up to 190 GPa reportedly showed a diamagnetic signal consistent with the Meissner effect at temperatures matching the resistance-determined Tc. This was presented as independent confirmation of bulk superconductivity in C-S-H.",
+      "content_hash": "ee4ba74c2730389525df47a17dc723044d4216677d591e7e954de7e5a76f4812",
+      "exported": false,
+      "interface_hash": "sha256:ed782f8005dafa2534f12555cb0d9b153bef1c5663bd54107d70f63413f6c638",
+      "label": "susceptibility_observation",
+      "qid": "github:csh_superconductivity::susceptibility_observation",
+      "required_by": [
+        "github:csh_superconductivity::original_sc_claim"
+      ],
+      "role": "local_hole"
+    }
+  ],
+  "version": "0.1.0"
+}

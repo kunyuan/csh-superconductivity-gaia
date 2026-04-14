@@ -1,0 +1,22 @@
+[project]
+name = "csh-superconductivity-gaia"
+version = "0.1.0"
+description = "Gaia knowledge package: Room-temperature superconductivity in a carbonaceous sulfur hydride (Snider et al., Nature 586, 373, 2020; RETRACTED 2022)"
+requires-python = ">=3.12"
+dependencies = [
+    "gaia-lang>=0.3.0",
+]
+
+[tool.gaia]
+type = "knowledge-package"
+uuid = "c8d4b2e5-1a3f-5c9d-b7e2-f6a8c3d1e5b4"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/csh_superconductivity"]
+
+[tool.uv.sources]
+gaia-lang = { path = "../Gaia", editable = true }

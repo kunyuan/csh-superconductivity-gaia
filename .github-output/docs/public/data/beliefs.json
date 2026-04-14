@@ -1,0 +1,378 @@
+{
+  "beliefs": [
+    {
+      "belief": 0.6147170850170878,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_07813ae2",
+      "label": "__conjunction_result_07813ae2"
+    },
+    {
+      "belief": 0.7049493495231354,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_26264243",
+      "label": "__conjunction_result_26264243"
+    },
+    {
+      "belief": 0.11723649509077978,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_519b78b8",
+      "label": "__conjunction_result_519b78b8"
+    },
+    {
+      "belief": 0.8516732109218608,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_584f493b",
+      "label": "__conjunction_result_584f493b"
+    },
+    {
+      "belief": 0.031827023049466635,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_a590f6b5",
+      "label": "__conjunction_result_a590f6b5"
+    },
+    {
+      "belief": 0.745544141019032,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_ea976754",
+      "label": "__conjunction_result_ea976754"
+    },
+    {
+      "belief": 0.6441864640231058,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_f31394b9",
+      "label": "__conjunction_result_f31394b9"
+    },
+    {
+      "belief": 0.999004546820158,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_0b707075",
+      "label": "__implication_result_0b707075"
+    },
+    {
+      "belief": 0.9994208221407849,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_148e6150",
+      "label": "__implication_result_148e6150"
+    },
+    {
+      "belief": 0.999,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_237eb6ea",
+      "label": "__implication_result_237eb6ea"
+    },
+    {
+      "belief": 0.9986751564025952,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_56856cf2",
+      "label": "__implication_result_56856cf2"
+    },
+    {
+      "belief": 0.9985091024244963,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_615e0ae1",
+      "label": "__implication_result_615e0ae1"
+    },
+    {
+      "belief": 0.999,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_63e4b497",
+      "label": "__implication_result_63e4b497"
+    },
+    {
+      "belief": 0.9981333882280091,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_82ce40c4",
+      "label": "__implication_result_82ce40c4"
+    },
+    {
+      "belief": 0.9989643437884146,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_84ed555d",
+      "label": "__implication_result_84ed555d"
+    },
+    {
+      "belief": 0.9989148740191762,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_ec167cc0",
+      "label": "__implication_result_ec167cc0"
+    },
+    {
+      "belief": 0.9973334062507824,
+      "knowledge_id": "github:csh_superconductivity::_anon_000",
+      "label": null
+    },
+    {
+      "belief": 0.9983007673938223,
+      "knowledge_id": "github:csh_superconductivity::_anon_001",
+      "label": null
+    },
+    {
+      "belief": 0.8576843311792082,
+      "knowledge_id": "github:csh_superconductivity::all_pressures_pathological",
+      "label": "all_pressures_pathological"
+    },
+    {
+      "belief": 0.8524603698885802,
+      "knowledge_id": "github:csh_superconductivity::background_subtraction_fraud",
+      "label": "background_subtraction_fraud"
+    },
+    {
+      "belief": 0.9559296405134773,
+      "knowledge_id": "github:csh_superconductivity::csh_design_rationale",
+      "label": "csh_design_rationale"
+    },
+    {
+      "belief": 0.9245599473177585,
+      "knowledge_id": "github:csh_superconductivity::data_integrity_failure",
+      "label": "data_integrity_failure"
+    },
+    {
+      "belief": 0.8512433187623889,
+      "knowledge_id": "github:csh_superconductivity::dias_broader_issues",
+      "label": "dias_broader_issues"
+    },
+    {
+      "belief": 0.8134458938641977,
+      "knowledge_id": "github:csh_superconductivity::eremets_failed_replication",
+      "label": "eremets_failed_replication"
+    },
+    {
+      "belief": 0.7929592939838691,
+      "knowledge_id": "github:csh_superconductivity::field_suppression",
+      "label": "field_suppression"
+    },
+    {
+      "belief": 0.8134458938641977,
+      "knowledge_id": "github:csh_superconductivity::goncharov_failed_replication",
+      "label": "goncharov_failed_replication"
+    },
+    {
+      "belief": 0.9337578201297579,
+      "knowledge_id": "github:csh_superconductivity::hydride_route_validated",
+      "label": "hydride_route_validated"
+    },
+    {
+      "belief": 0.8716544998421284,
+      "knowledge_id": "github:csh_superconductivity::hydride_sc_caution",
+      "label": "hydride_sc_caution"
+    },
+    {
+      "belief": 0.7411991174798364,
+      "knowledge_id": "github:csh_superconductivity::isotope_effect_observed",
+      "label": "isotope_effect_observed"
+    },
+    {
+      "belief": 0.7123852080312161,
+      "knowledge_id": "github:csh_superconductivity::isotope_questioned",
+      "label": "isotope_questioned"
+    },
+    {
+      "belief": 0.9985097075718941,
+      "knowledge_id": "github:csh_superconductivity::nature_retraction",
+      "label": "nature_retraction"
+    },
+    {
+      "belief": 0.20203372739874983,
+      "knowledge_id": "github:csh_superconductivity::original_sc_claim",
+      "label": "original_sc_claim"
+    },
+    {
+      "belief": 0.3066190975415828,
+      "knowledge_id": "github:csh_superconductivity::original_sc_evidence",
+      "label": "original_sc_evidence"
+    },
+    {
+      "belief": 0.8339062234313576,
+      "knowledge_id": "github:csh_superconductivity::photochemical_synthesis",
+      "label": "photochemical_synthesis"
+    },
+    {
+      "belief": 0.63775031791088,
+      "knowledge_id": "github:csh_superconductivity::pressure_tc_relationship",
+      "label": "pressure_tc_relationship"
+    },
+    {
+      "belief": 0.8407598477409222,
+      "knowledge_id": "github:csh_superconductivity::raw_data_not_raw",
+      "label": "raw_data_not_raw"
+    },
+    {
+      "belief": 0.7161692935584101,
+      "knowledge_id": "github:csh_superconductivity::replication_failure",
+      "label": "replication_failure"
+    },
+    {
+      "belief": 0.6829244795772937,
+      "knowledge_id": "github:csh_superconductivity::resistance_observation",
+      "label": "resistance_observation"
+    },
+    {
+      "belief": 0.8413487880425772,
+      "knowledge_id": "github:csh_superconductivity::resistance_still_open",
+      "label": "resistance_still_open"
+    },
+    {
+      "belief": 0.7758855766460553,
+      "knowledge_id": "github:csh_superconductivity::rtsc_not_confirmed",
+      "label": "rtsc_not_confirmed"
+    },
+    {
+      "belief": 0.8523921810946241,
+      "knowledge_id": "github:csh_superconductivity::susceptibility_data_invalid",
+      "label": "susceptibility_data_invalid"
+    },
+    {
+      "belief": 0.11666715732463498,
+      "knowledge_id": "github:csh_superconductivity::susceptibility_observation",
+      "label": "susceptibility_observation"
+    }
+  ],
+  "diagnostics": {
+    "belief_history": {
+      "github:csh_superconductivity::__conjunction_result_07813ae2": [
+        0.6147170850170878
+      ],
+      "github:csh_superconductivity::__conjunction_result_26264243": [
+        0.7049493495231354
+      ],
+      "github:csh_superconductivity::__conjunction_result_519b78b8": [
+        0.11723649509077978
+      ],
+      "github:csh_superconductivity::__conjunction_result_584f493b": [
+        0.8516732109218608
+      ],
+      "github:csh_superconductivity::__conjunction_result_8d120129": [
+        0.5834227567559297
+      ],
+      "github:csh_superconductivity::__conjunction_result_a590f6b5": [
+        0.031827023049466635
+      ],
+      "github:csh_superconductivity::__conjunction_result_ea976754": [
+        0.745544141019032
+      ],
+      "github:csh_superconductivity::__conjunction_result_f31394b9": [
+        0.6441864640231058
+      ],
+      "github:csh_superconductivity::__implication_result_0b707075": [
+        0.999004546820158
+      ],
+      "github:csh_superconductivity::__implication_result_148923c7": [
+        0.965615979182761
+      ],
+      "github:csh_superconductivity::__implication_result_148e6150": [
+        0.9994208221407849
+      ],
+      "github:csh_superconductivity::__implication_result_237eb6ea": [
+        0.999
+      ],
+      "github:csh_superconductivity::__implication_result_338e79dc": [
+        0.9030154649770502
+      ],
+      "github:csh_superconductivity::__implication_result_3eda0f69": [
+        0.8357169005429234
+      ],
+      "github:csh_superconductivity::__implication_result_56856cf2": [
+        0.9986751564025952
+      ],
+      "github:csh_superconductivity::__implication_result_615e0ae1": [
+        0.9985091024244963
+      ],
+      "github:csh_superconductivity::__implication_result_63e4b497": [
+        0.999
+      ],
+      "github:csh_superconductivity::__implication_result_6de55f9a": [
+        0.9226587394341632
+      ],
+      "github:csh_superconductivity::__implication_result_82ce40c4": [
+        0.9981333882280091
+      ],
+      "github:csh_superconductivity::__implication_result_84ed555d": [
+        0.9989643437884146
+      ],
+      "github:csh_superconductivity::__implication_result_8741e77f": [
+        0.8566027703907484
+      ],
+      "github:csh_superconductivity::__implication_result_9ffbf177": [
+        0.9321531626127201
+      ],
+      "github:csh_superconductivity::__implication_result_cb72b72c": [
+        0.9151910859961224
+      ],
+      "github:csh_superconductivity::__implication_result_da744ae5": [
+        0.7871395516698972
+      ],
+      "github:csh_superconductivity::__implication_result_ec167cc0": [
+        0.9989148740191762
+      ],
+      "github:csh_superconductivity::_anon_000": [
+        0.9973334062507824
+      ],
+      "github:csh_superconductivity::_anon_001": [
+        0.9983007673938223
+      ],
+      "github:csh_superconductivity::all_pressures_pathological": [
+        0.8576843311792082
+      ],
+      "github:csh_superconductivity::background_subtraction_fraud": [
+        0.8524603698885802
+      ],
+      "github:csh_superconductivity::csh_design_rationale": [
+        0.9559296405134773
+      ],
+      "github:csh_superconductivity::data_integrity_failure": [
+        0.9245599473177585
+      ],
+      "github:csh_superconductivity::dias_broader_issues": [
+        0.8512433187623889
+      ],
+      "github:csh_superconductivity::eremets_failed_replication": [
+        0.8134458938641977
+      ],
+      "github:csh_superconductivity::field_suppression": [
+        0.7929592939838691
+      ],
+      "github:csh_superconductivity::goncharov_failed_replication": [
+        0.8134458938641977
+      ],
+      "github:csh_superconductivity::hydride_route_validated": [
+        0.9337578201297579
+      ],
+      "github:csh_superconductivity::hydride_sc_caution": [
+        0.8716544998421284
+      ],
+      "github:csh_superconductivity::isotope_effect_observed": [
+        0.7411991174798364
+      ],
+      "github:csh_superconductivity::isotope_questioned": [
+        0.7123852080312161
+      ],
+      "github:csh_superconductivity::nature_retraction": [
+        0.9985097075718941
+      ],
+      "github:csh_superconductivity::original_sc_claim": [
+        0.20203372739874983
+      ],
+      "github:csh_superconductivity::original_sc_evidence": [
+        0.3066190975415828
+      ],
+      "github:csh_superconductivity::photochemical_synthesis": [
+        0.8339062234313576
+      ],
+      "github:csh_superconductivity::pressure_tc_relationship": [
+        0.63775031791088
+      ],
+      "github:csh_superconductivity::raw_data_not_raw": [
+        0.8407598477409222
+      ],
+      "github:csh_superconductivity::replication_failure": [
+        0.7161692935584101
+      ],
+      "github:csh_superconductivity::resistance_observation": [
+        0.6829244795772937
+      ],
+      "github:csh_superconductivity::resistance_still_open": [
+        0.8413487880425772
+      ],
+      "github:csh_superconductivity::rtsc_not_confirmed": [
+        0.7758855766460553
+      ],
+      "github:csh_superconductivity::susceptibility_data_invalid": [
+        0.8523921810946241
+      ],
+      "github:csh_superconductivity::susceptibility_observation": [
+        0.11666715732463498
+      ]
+    },
+    "converged": true,
+    "direction_changes": {},
+    "iterations_run": 2,
+    "max_change_at_stop": 0.0,
+    "treewidth": 4
+  },
+  "gaia_lang_version": "0.3.0",
+  "ir_hash": "sha256:77d7779a2f1642556a0ca82557e98dcd0c4e44c76b1e16fe8f3774c13ac3c7c5"
+}

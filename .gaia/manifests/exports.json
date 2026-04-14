@@ -1,0 +1,36 @@
+{
+  "exports": [
+    {
+      "content": "The Snider et al. C-S-H paper exhibited data processing integrity failures: non-standard background subtraction that statistical analysis suggests was reversed (adding rather than subtracting background), 'raw' data that were not actually raw, and anomalies present at all measured pressures. These issues represent a fundamental breakdown in scientific data reporting.",
+      "content_hash": "d0ca6dfc92af923b51caeac14a20aef3f0faad54a6be50f855b4af3b73e2751f",
+      "label": "data_integrity_failure",
+      "qid": "github:csh_superconductivity::data_integrity_failure",
+      "type": "claim"
+    },
+    {
+      "content": "Room-temperature superconductivity was achieved in a carbonaceous sulfur hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa, as reported by Snider et al. in Nature 586, 373 (2020). This would represent a major milestone — the first observation of superconductivity above room temperature.",
+      "content_hash": "8b765c20712eeadb76e3c116f83c2671241637fbfd6f532f86c458cda19245be",
+      "label": "original_sc_claim",
+      "qid": "github:csh_superconductivity::original_sc_claim",
+      "type": "claim"
+    },
+    {
+      "content": "Room-temperature superconductivity in the C-S-H system, as claimed by Snider et al., has NOT been confirmed. The magnetic susceptibility evidence — essential for establishing bulk SC — was shown to be unreliable. Two independent replication attempts failed. The paper was retracted by Nature. The resistance data alone are insufficient to establish the claim.",
+      "content_hash": "579f0d8fd6a2657c086354415995587284bb7d083ebf9405fc11613ea1b1730b",
+      "label": "rtsc_not_confirmed",
+      "qid": "github:csh_superconductivity::rtsc_not_confirmed",
+      "type": "claim"
+    },
+    {
+      "content": "The magnetic susceptibility data in Snider et al. are unreliable and cannot be used as evidence for superconductivity. The non-standard, user-defined background subtraction procedure was not specified in the paper, the data show statistical signatures of fabrication, and no valid processing method can reproduce the published results from the reported raw measurements.",
+      "content_hash": "ddbc68eac8f38a21675601f6f1c86392e0d9f0b0ff2ff6e3c353df1f36d4fd5a",
+      "label": "susceptibility_data_invalid",
+      "qid": "github:csh_superconductivity::susceptibility_data_invalid",
+      "type": "claim"
+    }
+  ],
+  "ir_hash": "sha256:77d7779a2f1642556a0ca82557e98dcd0c4e44c76b1e16fe8f3774c13ac3c7c5",
+  "manifest_schema_version": 1,
+  "package": "csh-superconductivity",
+  "version": "0.1.0"
+}

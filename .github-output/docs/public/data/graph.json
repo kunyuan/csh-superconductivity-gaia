@@ -1,0 +1,1008 @@
+{
+  "modules": [
+    {
+      "id": "background",
+      "order": 0,
+      "node_count": 8,
+      "strategy_count": 2
+    },
+    {
+      "id": "experiment",
+      "order": 1,
+      "node_count": 7,
+      "strategy_count": 3
+    },
+    {
+      "id": "retraction",
+      "order": 2,
+      "node_count": 13,
+      "strategy_count": 9
+    },
+    {
+      "id": "conclusions",
+      "order": 3,
+      "node_count": 3,
+      "strategy_count": 3
+    }
+  ],
+  "cross_module_edges": [
+    {
+      "from_module": "conclusions",
+      "to_module": "retraction",
+      "count": 1
+    },
+    {
+      "from_module": "experiment",
+      "to_module": "retraction",
+      "count": 1
+    },
+    {
+      "from_module": "retraction",
+      "to_module": "conclusions",
+      "count": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "github:csh_superconductivity::bcs_theory",
+      "label": "bcs_theory",
+      "title": "BCS Theory",
+      "type": "setting",
+      "module": "background",
+      "content": "Bardeen-Cooper-Schrieffer (BCS) theory: phonon-mediated electron-electron attraction leads to Cooper pairing. The Eliashberg formulation places no apparent upper bound on Tc. High Tc requires: (1) high-frequency phonons, (2) strong electron-phonon coupling, (3) high electronic density of states.",
+      "prior": null,
+      "belief": null,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::h3s_precedent",
+      "label": "h3s_precedent",
+      "title": "H3S Precedent at 203 K",
+      "type": "setting",
+      "module": "background",
+      "content": "Drozdov et al. (2015) demonstrated superconductivity at Tc = 203 K in H3S under ~155 GPa, confirmed by multiple groups. This established hydrogen-rich compounds under extreme pressure as a viable route to high-Tc superconductivity.",
+      "prior": null,
+      "belief": null,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::lah10_precedent",
+      "label": "lah10_precedent",
+      "title": "LaH10 Precedent at 250 K",
+      "type": "setting",
+      "module": "background",
+      "content": "Drozdov et al. (2019) and Somayazulu et al. (2019) independently confirmed superconductivity at ~250 K in LaH10 (lanthanum decahydride) in the clathrate structure under ~170 GPa. This demonstrated that the hydride route could reach even higher Tc than H3S.",
+      "prior": null,
+      "belief": null,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::diamond_anvil_cell",
+      "label": "diamond_anvil_cell",
+      "title": "Diamond Anvil Cell Technique",
+      "type": "setting",
+      "module": "background",
+      "content": "Diamond anvil cell (DAC) enables static high-pressure experiments up to hundreds of GPa. Four-probe resistance measurements and ac magnetic susceptibility measurements can be performed in situ. Samples are typically ~10 um in diameter.",
+      "prior": null,
+      "belief": null,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::hydride_route_validated",
+      "label": "hydride_route_validated",
+      "title": "Hydride SC Route Validated by H3S and LaH10",
+      "type": "claim",
+      "module": "background",
+      "content": "The discoveries of H3S at 203 K and LaH10 at 250 K established that hydrogen-rich compounds under extreme pressure can achieve very high superconducting Tc via the conventional BCS mechanism. This validated the hydride route and motivated searches for even higher Tc by chemical tuning.",
+      "prior": 0.95,
+      "belief": 0.9337578201297579,
+      "exported": false,
+      "metadata": {
+        "prior": 0.95,
+        "prior_justification": "H3S and LaH10 independently confirmed by multiple groups; hydride route firmly established."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::csh_design_rationale",
+      "label": "csh_design_rationale",
+      "title": "C-S-H Design Rationale",
+      "type": "claim",
+      "module": "background",
+      "content": "The C-S-H system was targeted by mixing methane (CH4) into the H2S + H2 precursor mixture for H3S at low pressures. The rationale was that molecular exchange within the van der Waals solid assemblage could produce hydrogen-rich compounds with potentially higher Tc than H3S. Carbon introduction was motivated by the desire to chemically tune the H-S system toward higher critical temperatures.",
+      "prior": null,
+      "belief": 0.9559296405134773,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "hydride_route_validated"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::photochemical_synthesis",
+      "label": "photochemical_synthesis",
+      "title": "Photochemical Synthesis Method",
+      "type": "claim",
+      "module": "background",
+      "content": "Samples were prepared by photochemical synthesis from elemental precursors (C + S + H2) in the DAC, using green laser irradiation to drive the reaction. This is a non-standard synthesis approach — most high-pressure hydride studies use direct compression of molecular precursors or laser heating.",
+      "prior": null,
+      "belief": 0.8339062234313576,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::main_question",
+      "label": "main_question",
+      "title": "Main Question: Room-Temperature SC in C-S-H",
+      "type": "question",
+      "module": "background",
+      "content": "Does the photochemically synthesized carbonaceous sulfur hydride (C-S-H) system exhibit room-temperature superconductivity under high pressure, and if so, is the evidence robust?",
+      "prior": null,
+      "belief": null,
+      "exported": false,
+      "metadata": {}
+    },
+    {
+      "id": "github:csh_superconductivity::resistance_observation",
+      "label": "resistance_observation",
+      "title": "Zero Resistance at 287.7 K",
+      "type": "claim",
+      "module": "experiment",
+      "content": "Four-probe electrical resistance measurements in the DAC showed sharp drops to zero resistance at multiple pressures in the C-S-H system. The maximum transition temperature observed was Tc = 287.7 +/- 1.2 K (approximately 15 C) at 267 +/- 10 GPa — room temperature.",
+      "prior": 0.85,
+      "belief": 0.6829244795772937,
+      "exported": false,
+      "metadata": {
+        "figure": "[Nature Fig. 1 — R(T) at multiple pressures]",
+        "caption": "Fig. 1 | Electrical resistance as a function of temperature at multiple pressures showing superconducting transitions up to 287.7 K.",
+        "prior": 0.85,
+        "prior_justification": "Four-probe measurement in DAC, standard technique; but extraordinary claim warrants some skepticism."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::pressure_tc_relationship",
+      "label": "pressure_tc_relationship",
+      "title": "P-Tc Phase Diagram with Sharp Upturn",
+      "type": "claim",
+      "module": "experiment",
+      "content": "The superconducting Tc in C-S-H spans the pressure range 140-275 GPa. Below 220 GPa, Tc values are moderate (~150-200 K). Above 220 GPa, there is a sharp upturn in Tc reaching 287.7 K at 267 GPa, attributed to a structural phase transition in the C-S-H compound.",
+      "prior": null,
+      "belief": 0.63775031791088,
+      "exported": false,
+      "metadata": {
+        "figure": "[Nature Fig. 3 — P-Tc phase diagram]",
+        "caption": "Fig. 3 | Pressure-temperature phase diagram showing sharp Tc upturn above 220 GPa reaching room temperature at 267 GPa.",
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "resistance_observation"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::susceptibility_observation",
+      "label": "susceptibility_observation",
+      "title": "Diamagnetic Susceptibility Signal",
+      "type": "claim",
+      "module": "experiment",
+      "content": "AC magnetic susceptibility measurements up to 190 GPa reportedly showed a diamagnetic signal consistent with the Meissner effect at temperatures matching the resistance-determined Tc. This was presented as independent confirmation of bulk superconductivity in C-S-H.",
+      "prior": 0.8,
+      "belief": 0.11666715732463498,
+      "exported": false,
+      "metadata": {
+        "figure": "[Nature Fig. 2a — ac susceptibility, RETRACTED DATA]",
+        "caption": "Fig. 2a | AC magnetic susceptibility vs temperature at multiple pressures. THIS DATA was the primary target of the retraction due to non-standard background subtraction.",
+        "prior": 0.8,
+        "prior_justification": "AC susceptibility in DAC is complex; background subtraction introduces significant processing uncertainty."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::field_suppression",
+      "label": "field_suppression",
+      "title": "Magnetic Field Suppression of Tc",
+      "type": "claim",
+      "module": "experiment",
+      "content": "Application of external magnetic fields suppressed the superconducting transition temperature, consistent with the expected behavior of a type-II superconductor. The upper critical field Hc2(0) was estimated from the field-dependent Tc measurements.",
+      "prior": 0.8,
+      "belief": 0.7929592939838691,
+      "exported": false,
+      "metadata": {
+        "figure": "[Nature Extended Data Fig. 5 — field dependence]",
+        "caption": "Extended Data Fig. 5 | Temperature dependence of resistance at different magnetic fields showing Tc suppression.",
+        "prior": 0.8,
+        "prior_justification": "Standard magnetic field test, but depends on same DAC setup and sample quality as other measurements."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::isotope_effect_observed",
+      "label": "isotope_effect_observed",
+      "title": "13C Isotope Effect Claimed",
+      "type": "claim",
+      "module": "experiment",
+      "content": "Carbon-13 isotope substitution (13C for 12C) showed a shift in Tc that the authors claimed was consistent with the BCS isotope effect, suggesting phonon-mediated superconductivity with carbon phonon modes contributing to the pairing mechanism.",
+      "prior": 0.75,
+      "belief": 0.7411991174798364,
+      "exported": false,
+      "metadata": {
+        "figure": "[Nature Fig. 4 — isotope effect]",
+        "caption": "Fig. 4 | Resistance measurements comparing 12C and 13C samples showing isotope shift in Tc.",
+        "prior": 0.75,
+        "prior_justification": "13C substitution is less conventional than H/D isotope effect; C phonon contribution to SC pairing is less established."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::original_sc_evidence",
+      "label": "original_sc_evidence",
+      "title": "Combined SC Evidence as Reported",
+      "type": "claim",
+      "module": "experiment",
+      "content": "The original paper presented four lines of evidence for room-temperature superconductivity in C-S-H: (1) zero resistance at 287.7 K, (2) diamagnetic susceptibility signal, (3) magnetic field suppression of Tc, and (4) 13C isotope effect. Together these were claimed to establish bulk superconductivity at room temperature.",
+      "prior": null,
+      "belief": 0.3066190975415828,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "field_suppression",
+              "isotope_effect_observed",
+              "resistance_observation",
+              "susceptibility_observation"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::original_sc_claim",
+      "label": "original_sc_claim",
+      "title": "Original Room-Temperature SC Claim",
+      "type": "claim",
+      "module": "experiment",
+      "content": "Room-temperature superconductivity was achieved in a carbonaceous sulfur hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa, as reported by Snider et al. in Nature 586, 373 (2020). This would represent a major milestone — the first observation of superconductivity above room temperature.",
+      "prior": null,
+      "belief": 0.20203372739874983,
+      "exported": true,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "original_sc_evidence",
+              "pressure_tc_relationship"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::background_subtraction_fraud",
+      "label": "background_subtraction_fraud",
+      "title": "Background Subtraction Fraud Analysis",
+      "type": "claim",
+      "module": "retraction",
+      "content": "Van der Marel and Hirsch (arXiv:2201.07686, 2022) performed a detailed statistical analysis of the magnetic susceptibility data in Snider et al. Their key finding: the published data are compatible with a REVERSED procedure in which a background signal was ADDED to a predetermined superconducting-like result, rather than subtracted from raw measurements. The 'measured voltage' data presented as raw data appeared to be artificially constructed.",
+      "prior": 0.95,
+      "belief": 0.8524603698885802,
+      "exported": false,
+      "metadata": {
+        "prior": 0.95,
+        "prior_justification": "Detailed statistical analysis by van der Marel & Hirsch; peer-reviewed methodology, reproducible findings."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::all_pressures_pathological",
+      "label": "all_pressures_pathological",
+      "title": "All Six Pressures Show Pathological Data",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The van der Marel & Hirsch analysis found that background-corrected susceptibility data at ALL SIX measured pressures showed statistical anomalies. Four different proposed data-processing methods were evaluated; NONE could reproduce the published results from the supposedly raw data. This indicates systematic data fabrication rather than an isolated error.",
+      "prior": null,
+      "belief": 0.8576843311792082,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "background_subtraction_fraud"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::raw_data_not_raw",
+      "label": "raw_data_not_raw",
+      "title": "Raw Data Are Not Raw",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The 'measured voltage' data that Snider et al. presented as unprocessed raw measurements were shown by van der Marel & Hirsch to be NOT raw data. These data appear to have been artificially constructed, calling into question the fundamental integrity of the susceptibility measurements.",
+      "prior": null,
+      "belief": 0.8407598477409222,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "background_subtraction_fraud"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::susceptibility_data_invalid",
+      "label": "susceptibility_data_invalid",
+      "title": "Susceptibility Data Invalid",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The magnetic susceptibility data in Snider et al. are unreliable and cannot be used as evidence for superconductivity. The non-standard, user-defined background subtraction procedure was not specified in the paper, the data show statistical signatures of fabrication, and no valid processing method can reproduce the published results from the reported raw measurements.",
+      "prior": null,
+      "belief": 0.8523921810946241,
+      "exported": true,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "all_pressures_pathological",
+              "background_subtraction_fraud",
+              "dias_broader_issues",
+              "raw_data_not_raw"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::_anon_000",
+      "label": "",
+      "title": null,
+      "type": "claim",
+      "module": "retraction",
+      "content": "not_both_true(A, B)",
+      "prior": 0.93,
+      "belief": 0.9973334062507824,
+      "exported": false,
+      "metadata": {
+        "helper_kind": "contradiction_result",
+        "prior": 0.93
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::eremets_failed_replication",
+      "label": "eremets_failed_replication",
+      "title": "Eremets Group Failed Replication",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The Eremets group at the Max Planck Institute spent 6 months attempting to replicate the C-S-H results. They observed superconductivity in some C-S-H samples only up to approximately 200 K — far below the claimed 287.7 K room-temperature Tc. This is consistent with conventional hydride superconductivity in the pressure range but NOT with the room-temperature claims.",
+      "prior": 0.9,
+      "belief": 0.8134458938641977,
+      "exported": false,
+      "metadata": {
+        "prior": 0.9,
+        "prior_justification": "6-month effort by leading high-pressure SC group; partial SC observed but far below claimed Tc."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::goncharov_failed_replication",
+      "label": "goncharov_failed_replication",
+      "title": "Goncharov Group Failed Replication",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The Goncharov group at the Carnegie Institution could not synthesize any C-S-H compound undergoing the structural transition at the pressure claimed by Snider et al. They were unable to reproduce even the starting material conditions for the claimed room-temperature superconductor.",
+      "prior": 0.9,
+      "belief": 0.8134458938641977,
+      "exported": false,
+      "metadata": {
+        "prior": 0.9,
+        "prior_justification": "Expert group could not synthesize claimed compound; independent negative evidence."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::replication_failure",
+      "label": "replication_failure",
+      "title": "Independent Replication Failures",
+      "type": "claim",
+      "module": "retraction",
+      "content": "Two independent expert groups (Eremets and Goncharov), both with extensive experience in high-pressure hydride superconductivity, failed to replicate the room-temperature Tc claimed by Snider et al. The Eremets group found Tc limited to ~200 K, and the Goncharov group could not even synthesize the claimed compound.",
+      "prior": null,
+      "belief": 0.7161692935584101,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "eremets_failed_replication",
+              "goncharov_failed_replication"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::_anon_001",
+      "label": "",
+      "title": null,
+      "type": "claim",
+      "module": "retraction",
+      "content": "not_both_true(A, B)",
+      "prior": 0.85,
+      "belief": 0.9983007673938223,
+      "exported": false,
+      "metadata": {
+        "helper_kind": "contradiction_result",
+        "prior": 0.85
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::nature_retraction",
+      "label": "nature_retraction",
+      "title": "Nature Editorial Retraction",
+      "type": "claim",
+      "module": "retraction",
+      "content": "Nature editors retracted Snider et al. on 26 September 2022, stating that the non-standard, user-defined background subtraction procedure used for the magnetic susceptibility data 'undermines confidence in the published magnetic susceptibility data as a whole.' The retraction was issued over the objections of the authors.",
+      "prior": 0.99,
+      "belief": 0.9985097075718941,
+      "exported": false,
+      "metadata": {
+        "prior": 0.99,
+        "prior_justification": "Official editorial retraction by Nature; highest level of formal invalidation.",
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "susceptibility_data_invalid"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::dias_broader_issues",
+      "label": "dias_broader_issues",
+      "title": "Dias Group Broader Data Integrity Issues",
+      "type": "claim",
+      "module": "retraction",
+      "content": "A subsequent paper by Ranga Dias's group claiming superconductivity in nitrogen-doped lutetium hydride (Nature 2023) was also retracted. Dias faced investigations for data integrity issues across multiple publications, establishing a pattern of questionable data practices.",
+      "prior": 0.92,
+      "belief": 0.8512433187623889,
+      "exported": false,
+      "metadata": {
+        "prior": 0.92,
+        "prior_justification": "Second retraction (lutetium hydride) plus institutional investigations; documented pattern."
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::resistance_still_open",
+      "label": "resistance_still_open",
+      "title": "Resistance Data Not Directly Retracted But Insufficient",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The resistance measurements in Snider et al. were NOT directly implicated in the retraction, which focused on the susceptibility data. However, without independent susceptibility confirmation of bulk superconductivity, the resistance data alone are insufficient to establish room-temperature SC — zero resistance can have other explanations (filamentary paths, measurement artifacts).",
+      "prior": null,
+      "belief": 0.8413487880425772,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "resistance_observation",
+              "rtsc_not_confirmed",
+              "susceptibility_data_invalid"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::isotope_questioned",
+      "label": "isotope_questioned",
+      "title": "Isotope Effect Questioned by Context",
+      "type": "claim",
+      "module": "retraction",
+      "content": "The 13C isotope effect was not directly addressed in the retraction, but the broader data integrity concerns and Dias group's pattern of issues cast doubt on all data in the paper. The isotope effect alone, without reliable susceptibility data, provides only weak evidence.",
+      "prior": null,
+      "belief": 0.7123852080312161,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "dias_broader_issues"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::rtsc_not_confirmed",
+      "label": "rtsc_not_confirmed",
+      "title": "Room-Temperature SC NOT Confirmed in C-S-H",
+      "type": "claim",
+      "module": "conclusions",
+      "content": "Room-temperature superconductivity in the C-S-H system, as claimed by Snider et al., has NOT been confirmed. The magnetic susceptibility evidence — essential for establishing bulk SC — was shown to be unreliable. Two independent replication attempts failed. The paper was retracted by Nature. The resistance data alone are insufficient to establish the claim.",
+      "prior": null,
+      "belief": 0.7758855766460553,
+      "exported": true,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "nature_retraction",
+              "replication_failure",
+              "susceptibility_data_invalid"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::data_integrity_failure",
+      "label": "data_integrity_failure",
+      "title": "Data Processing Integrity Failures Identified",
+      "type": "claim",
+      "module": "conclusions",
+      "content": "The Snider et al. C-S-H paper exhibited data processing integrity failures: non-standard background subtraction that statistical analysis suggests was reversed (adding rather than subtracting background), 'raw' data that were not actually raw, and anomalies present at all measured pressures. These issues represent a fundamental breakdown in scientific data reporting.",
+      "prior": null,
+      "belief": 0.9245599473177585,
+      "exported": true,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "nature_retraction",
+              "susceptibility_data_invalid"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "github:csh_superconductivity::hydride_sc_caution",
+      "label": "hydride_sc_caution",
+      "title": "Lessons for Hydride SC Field",
+      "type": "claim",
+      "module": "conclusions",
+      "content": "The C-S-H retraction demonstrates that extraordinary claims (room-temperature superconductivity) require extraordinary evidence with full methodological transparency. Magnetic susceptibility measurements in DAC are particularly vulnerable to background subtraction artifacts, and the field must demand: (1) publication of complete raw data, (2) standard and documented processing procedures, (3) independent replication before acceptance.",
+      "prior": null,
+      "belief": 0.8716544998421284,
+      "exported": false,
+      "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "data_integrity_failure",
+              "rtsc_not_confirmed"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "strat_0",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "background",
+      "reason": ""
+    },
+    {
+      "id": "strat_1",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "background",
+      "reason": ""
+    },
+    {
+      "id": "strat_2",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "experiment",
+      "reason": ""
+    },
+    {
+      "id": "strat_3",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "experiment",
+      "reason": ""
+    },
+    {
+      "id": "strat_4",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "experiment",
+      "reason": ""
+    },
+    {
+      "id": "strat_5",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_6",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_7",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_8",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_9",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_10",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_11",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_12",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "strat_13",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "conclusions",
+      "reason": ""
+    },
+    {
+      "id": "strat_14",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "conclusions",
+      "reason": ""
+    },
+    {
+      "id": "strat_15",
+      "type": "strategy",
+      "strategy_type": "deduction",
+      "module": "conclusions",
+      "reason": ""
+    },
+    {
+      "id": "strat_16",
+      "type": "strategy",
+      "strategy_type": "support",
+      "module": "retraction",
+      "reason": ""
+    },
+    {
+      "id": "oper_0",
+      "type": "operator",
+      "operator_type": "contradiction",
+      "module": "retraction"
+    },
+    {
+      "id": "oper_1",
+      "type": "operator",
+      "operator_type": "contradiction",
+      "module": "retraction"
+    }
+  ],
+  "edges": [
+    {
+      "source": "github:csh_superconductivity::hydride_route_validated",
+      "target": "strat_0",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::h3s_precedent",
+      "target": "strat_0",
+      "role": "background"
+    },
+    {
+      "source": "github:csh_superconductivity::lah10_precedent",
+      "target": "strat_0",
+      "role": "background"
+    },
+    {
+      "source": "github:csh_superconductivity::bcs_theory",
+      "target": "strat_0",
+      "role": "background"
+    },
+    {
+      "source": "strat_0",
+      "target": "github:csh_superconductivity::csh_design_rationale",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::csh_design_rationale",
+      "target": "strat_1",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::diamond_anvil_cell",
+      "target": "strat_1",
+      "role": "background"
+    },
+    {
+      "source": "strat_1",
+      "target": "github:csh_superconductivity::photochemical_synthesis",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::resistance_observation",
+      "target": "strat_2",
+      "role": "premise"
+    },
+    {
+      "source": "strat_2",
+      "target": "github:csh_superconductivity::pressure_tc_relationship",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::resistance_observation",
+      "target": "strat_3",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_observation",
+      "target": "strat_3",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::field_suppression",
+      "target": "strat_3",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::isotope_effect_observed",
+      "target": "strat_3",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::diamond_anvil_cell",
+      "target": "strat_3",
+      "role": "background"
+    },
+    {
+      "source": "strat_3",
+      "target": "github:csh_superconductivity::original_sc_evidence",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::original_sc_evidence",
+      "target": "strat_4",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::pressure_tc_relationship",
+      "target": "strat_4",
+      "role": "premise"
+    },
+    {
+      "source": "strat_4",
+      "target": "github:csh_superconductivity::original_sc_claim",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::background_subtraction_fraud",
+      "target": "strat_5",
+      "role": "premise"
+    },
+    {
+      "source": "strat_5",
+      "target": "github:csh_superconductivity::all_pressures_pathological",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::background_subtraction_fraud",
+      "target": "strat_6",
+      "role": "premise"
+    },
+    {
+      "source": "strat_6",
+      "target": "github:csh_superconductivity::raw_data_not_raw",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::background_subtraction_fraud",
+      "target": "strat_7",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::all_pressures_pathological",
+      "target": "strat_7",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::raw_data_not_raw",
+      "target": "strat_7",
+      "role": "premise"
+    },
+    {
+      "source": "strat_7",
+      "target": "github:csh_superconductivity::susceptibility_data_invalid",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::eremets_failed_replication",
+      "target": "strat_8",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::goncharov_failed_replication",
+      "target": "strat_8",
+      "role": "premise"
+    },
+    {
+      "source": "strat_8",
+      "target": "github:csh_superconductivity::replication_failure",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_data_invalid",
+      "target": "strat_9",
+      "role": "premise"
+    },
+    {
+      "source": "strat_9",
+      "target": "github:csh_superconductivity::nature_retraction",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::dias_broader_issues",
+      "target": "strat_10",
+      "role": "premise"
+    },
+    {
+      "source": "strat_10",
+      "target": "github:csh_superconductivity::susceptibility_data_invalid",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::resistance_observation",
+      "target": "strat_11",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_data_invalid",
+      "target": "strat_11",
+      "role": "premise"
+    },
+    {
+      "source": "strat_11",
+      "target": "github:csh_superconductivity::resistance_still_open",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::dias_broader_issues",
+      "target": "strat_12",
+      "role": "premise"
+    },
+    {
+      "source": "strat_12",
+      "target": "github:csh_superconductivity::isotope_questioned",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_data_invalid",
+      "target": "strat_13",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::replication_failure",
+      "target": "strat_13",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::nature_retraction",
+      "target": "strat_13",
+      "role": "premise"
+    },
+    {
+      "source": "strat_13",
+      "target": "github:csh_superconductivity::rtsc_not_confirmed",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_data_invalid",
+      "target": "strat_14",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::nature_retraction",
+      "target": "strat_14",
+      "role": "premise"
+    },
+    {
+      "source": "strat_14",
+      "target": "github:csh_superconductivity::data_integrity_failure",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::data_integrity_failure",
+      "target": "strat_15",
+      "role": "premise"
+    },
+    {
+      "source": "github:csh_superconductivity::rtsc_not_confirmed",
+      "target": "strat_15",
+      "role": "premise"
+    },
+    {
+      "source": "strat_15",
+      "target": "github:csh_superconductivity::hydride_sc_caution",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::rtsc_not_confirmed",
+      "target": "strat_16",
+      "role": "premise"
+    },
+    {
+      "source": "strat_16",
+      "target": "github:csh_superconductivity::resistance_still_open",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_data_invalid",
+      "target": "oper_0",
+      "role": "variable"
+    },
+    {
+      "source": "github:csh_superconductivity::susceptibility_observation",
+      "target": "oper_0",
+      "role": "variable"
+    },
+    {
+      "source": "oper_0",
+      "target": "github:csh_superconductivity::_anon_000",
+      "role": "conclusion"
+    },
+    {
+      "source": "github:csh_superconductivity::replication_failure",
+      "target": "oper_1",
+      "role": "variable"
+    },
+    {
+      "source": "github:csh_superconductivity::original_sc_claim",
+      "target": "oper_1",
+      "role": "variable"
+    },
+    {
+      "source": "oper_1",
+      "target": "github:csh_superconductivity::_anon_001",
+      "role": "conclusion"
+    }
+  ]
+}
