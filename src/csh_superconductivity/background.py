@@ -7,6 +7,9 @@ Snider et al. study.
 
 from gaia.lang import claim, deduction, question, setting, support
 
+from h3s_superconductivity import hydrogen_materials_prospect
+from lah10_superconductivity import rtsc_prospect
+
 # ---------------------------------------------------------------------------
 # Settings — established prior discoveries
 # ---------------------------------------------------------------------------
@@ -17,22 +20,6 @@ bcs_theory = setting(
     "apparent upper bound on Tc. High Tc requires: (1) high-frequency phonons, "
     "(2) strong electron-phonon coupling, (3) high electronic density of states.",
     title="BCS Theory",
-)
-
-h3s_precedent = setting(
-    "Drozdov et al. (2015) demonstrated superconductivity at Tc = 203 K in "
-    "H3S under ~155 GPa, confirmed by multiple groups. This established "
-    "hydrogen-rich compounds under extreme pressure as a viable route to "
-    "high-Tc superconductivity.",
-    title="H3S Precedent at 203 K",
-)
-
-lah10_precedent = setting(
-    "Drozdov et al. (2019) and Somayazulu et al. (2019) independently "
-    "confirmed superconductivity at ~250 K in LaH10 (lanthanum decahydride) "
-    "in the clathrate structure under ~170 GPa. This demonstrated that the "
-    "hydride route could reach even higher Tc than H3S.",
-    title="LaH10 Precedent at 250 K",
 )
 
 diamond_anvil_cell = setting(
@@ -56,6 +43,20 @@ hydride_route_validated = claim(
     title="Hydride SC Route Validated by H3S and LaH10",
 )
 
+deduction(
+    premises=[hydrogen_materials_prospect, rtsc_prospect],
+    conclusion=hydride_route_validated,
+    background=[bcs_theory],
+    reason=(
+        "The H3S discovery established that hydrogen-rich materials are "
+        "high-Tc superconductors (@hydrogen_materials_prospect), and the "
+        "LaH10 result showed room-temperature SC appears achievable "
+        "(@rtsc_prospect). Together, these validated the hydride route "
+        "and motivated further chemical exploration."
+    ),
+    prior=0.95,
+)
+
 # ---------------------------------------------------------------------------
 # Claims — Chemical design rationale for C-S-H
 # ---------------------------------------------------------------------------
@@ -73,7 +74,7 @@ csh_design_rationale = claim(
 deduction(
     premises=[hydride_route_validated],
     conclusion=csh_design_rationale,
-    background=[h3s_precedent, lah10_precedent, bcs_theory],
+    background=[bcs_theory],
     reason=(
         "Given the validated hydride route (@hydride_route_validated) with "
         "H3S at 203 K and LaH10 at 250 K, a natural research direction is to "

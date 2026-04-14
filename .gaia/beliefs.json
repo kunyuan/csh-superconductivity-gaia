@@ -1,32 +1,42 @@
 {
   "beliefs": [
     {
+      "belief": 0.38396981685209447,
+      "knowledge_id": "github:csh_superconductivity::__conjunction_result_946bea51",
+      "label": "__conjunction_result_946bea51"
+    },
+    {
       "belief": 0.36956235121606823,
       "knowledge_id": "github:csh_superconductivity::__conjunction_result_a590f6b5",
       "label": "__conjunction_result_a590f6b5"
     },
     {
-      "belief": 0.5407141039576239,
+      "belief": 0.5407141039576241,
       "knowledge_id": "github:csh_superconductivity::__conjunction_result_e1fc2de0",
       "label": "__conjunction_result_e1fc2de0"
     },
     {
-      "belief": 0.9989999999999999,
+      "belief": 0.9990000000000001,
       "knowledge_id": "github:csh_superconductivity::__implication_result_53fdb3a4",
       "label": "__implication_result_53fdb3a4"
     },
     {
-      "belief": 0.9986751564025952,
+      "belief": 0.9986663220844215,
       "knowledge_id": "github:csh_superconductivity::__implication_result_56856cf2",
       "label": "__implication_result_56856cf2"
     },
     {
-      "belief": 0.9989999999999999,
+      "belief": 0.9990000000000001,
       "knowledge_id": "github:csh_superconductivity::__implication_result_84ed555d",
       "label": "__implication_result_84ed555d"
     },
     {
-      "belief": 0.9559296405134772,
+      "belief": 0.9991780784747859,
+      "knowledge_id": "github:csh_superconductivity::__implication_result_b558906e",
+      "label": "__implication_result_b558906e"
+    },
+    {
+      "belief": 0.9718490536903811,
       "knowledge_id": "github:csh_superconductivity::csh_design_rationale",
       "label": "csh_design_rationale"
     },
@@ -36,12 +46,12 @@
       "label": "field_suppression"
     },
     {
-      "belief": 0.9337578201297579,
+      "belief": 0.9591519290058562,
       "knowledge_id": "github:csh_superconductivity::hydride_route_validated",
       "label": "hydride_route_validated"
     },
     {
-      "belief": 0.7500000000000001,
+      "belief": 0.75,
       "knowledge_id": "github:csh_superconductivity::isotope_effect_observed",
       "label": "isotope_effect_observed"
     },
@@ -51,83 +61,105 @@
       "label": "original_sc_evidence"
     },
     {
-      "belief": 0.8339062234313575,
+      "belief": 0.8394668744540501,
       "knowledge_id": "github:csh_superconductivity::photochemical_synthesis",
       "label": "photochemical_synthesis"
     },
     {
-      "belief": 0.7687433810950498,
+      "belief": 0.7687433810950497,
       "knowledge_id": "github:csh_superconductivity::pressure_tc_relationship",
       "label": "pressure_tc_relationship"
     },
     {
-      "belief": 0.7693769856714852,
+      "belief": 0.769376985671485,
       "knowledge_id": "github:csh_superconductivity::resistance_observation",
       "label": "resistance_observation"
     },
     {
-      "belief": 0.7695465215369794,
+      "belief": 0.7695465215369796,
       "knowledge_id": "github:csh_superconductivity::room_temperature_sc",
       "label": "room_temperature_sc"
     },
     {
-      "belief": 0.8,
+      "belief": 0.7999999999999999,
       "knowledge_id": "github:csh_superconductivity::susceptibility_observation",
       "label": "susceptibility_observation"
+    },
+    {
+      "belief": 0.5886837913355346,
+      "knowledge_id": "github:h3s_superconductivity::hydrogen_materials_prospect",
+      "label": "hydrogen_materials_prospect"
+    },
+    {
+      "belief": 0.5886837913355346,
+      "knowledge_id": "github:lah10_superconductivity::rtsc_prospect",
+      "label": "rtsc_prospect"
     }
   ],
   "diagnostics": {
     "belief_history": {
+      "github:csh_superconductivity::__conjunction_result_946bea51": [
+        0.38396981685209447
+      ],
       "github:csh_superconductivity::__conjunction_result_a590f6b5": [
         0.36956235121606823
       ],
       "github:csh_superconductivity::__conjunction_result_e1fc2de0": [
-        0.5407141039576239
+        0.5407141039576241
       ],
       "github:csh_superconductivity::__implication_result_3eda0f69": [
         0.8845527204265063
       ],
       "github:csh_superconductivity::__implication_result_53fdb3a4": [
-        0.9989999999999999
+        0.9990000000000001
       ],
       "github:csh_superconductivity::__implication_result_56856cf2": [
-        0.9986751564025952
+        0.9986663220844215
       ],
       "github:csh_superconductivity::__implication_result_84ed555d": [
-        0.9989999999999999
+        0.9990000000000001
       ],
       "github:csh_superconductivity::__implication_result_8741e77f": [
-        0.8566027703907483
+        0.8542176700378753
+      ],
+      "github:csh_superconductivity::__implication_result_b558906e": [
+        0.9991780784747859
       ],
       "github:csh_superconductivity::csh_design_rationale": [
-        0.9559296405134772
+        0.9718490536903811
       ],
       "github:csh_superconductivity::field_suppression": [
         0.8
       ],
       "github:csh_superconductivity::hydride_route_validated": [
-        0.9337578201297579
+        0.9591519290058562
       ],
       "github:csh_superconductivity::isotope_effect_observed": [
-        0.7500000000000001
+        0.75
       ],
       "github:csh_superconductivity::original_sc_evidence": [
         0.6842272016435612
       ],
       "github:csh_superconductivity::photochemical_synthesis": [
-        0.8339062234313575
+        0.8394668744540501
       ],
       "github:csh_superconductivity::pressure_tc_relationship": [
-        0.7687433810950498
+        0.7687433810950497
       ],
       "github:csh_superconductivity::resistance_observation": [
-        0.7693769856714852
+        0.769376985671485
       ],
       "github:csh_superconductivity::room_temperature_sc": [
-        0.7695465215369794
+        0.7695465215369796
       ],
       "github:csh_superconductivity::susceptibility_observation": [
-        0.8
+        0.7999999999999999
+      ],
+      "github:h3s_superconductivity::hydrogen_materials_prospect": [
+        0.5886837913355346
+      ],
+      "github:lah10_superconductivity::rtsc_prospect": [
+        0.5886837913355346
       ]
     },
     "converged": true,
@@ -137,5 +169,5 @@
     "treewidth": 4
   },
   "gaia_lang_version": "0.3.0",
-  "ir_hash": "sha256:925f58e68418efbc86c797c717f72901a7d49b666ac958079fe20f8b5a15a7e6"
+  "ir_hash": "sha256:b9dfbf4fbd2ce4ba3288c07a4a522d6fc4dc80d10b6b50a843be379089eb105f"
 }

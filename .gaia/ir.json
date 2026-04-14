@@ -1,5 +1,5 @@
 {
-  "ir_hash": "sha256:925f58e68418efbc86c797c717f72901a7d49b666ac958079fe20f8b5a15a7e6",
+  "ir_hash": "sha256:b9dfbf4fbd2ce4ba3288c07a4a522d6fc4dc80d10b6b50a843be379089eb105f",
   "knowledges": [
     {
       "content": "Bardeen-Cooper-Schrieffer (BCS) theory: phonon-mediated electron-electron attraction leads to Cooper pairing. The Eliashberg formulation places no apparent upper bound on Tc. High Tc requires: (1) high-frequency phonons, (2) strong electron-phonon coupling, (3) high electronic density of states.",
@@ -14,33 +14,9 @@
       "type": "setting"
     },
     {
-      "content": "Drozdov et al. (2015) demonstrated superconductivity at Tc = 203 K in H3S under ~155 GPa, confirmed by multiple groups. This established hydrogen-rich compounds under extreme pressure as a viable route to high-Tc superconductivity.",
-      "content_hash": "a7b589c404231499b5e7b89360fb73cdc25c80476eb41fe1ecaf50e9659c12c5",
-      "declaration_index": 1,
-      "exported": false,
-      "id": "github:csh_superconductivity::h3s_precedent",
-      "label": "h3s_precedent",
-      "module": "background",
-      "parameters": [],
-      "title": "H3S Precedent at 203 K",
-      "type": "setting"
-    },
-    {
-      "content": "Drozdov et al. (2019) and Somayazulu et al. (2019) independently confirmed superconductivity at ~250 K in LaH10 (lanthanum decahydride) in the clathrate structure under ~170 GPa. This demonstrated that the hydride route could reach even higher Tc than H3S.",
-      "content_hash": "473666f7a8bfce4dbbd729c6c10a7ffcd7f037e86147326a7b637b4fcaa3d93b",
-      "declaration_index": 2,
-      "exported": false,
-      "id": "github:csh_superconductivity::lah10_precedent",
-      "label": "lah10_precedent",
-      "module": "background",
-      "parameters": [],
-      "title": "LaH10 Precedent at 250 K",
-      "type": "setting"
-    },
-    {
       "content": "Diamond anvil cell (DAC) enables static high-pressure experiments up to hundreds of GPa. Four-probe resistance measurements and ac magnetic susceptibility measurements can be performed in situ. Samples are typically ~10 um in diameter.",
       "content_hash": "c7eda3d76270d325943d4ede2f8323f75bd63332f1f0eb759d33472878b48493",
-      "declaration_index": 3,
+      "declaration_index": 1,
       "exported": false,
       "id": "github:csh_superconductivity::diamond_anvil_cell",
       "label": "diamond_anvil_cell",
@@ -52,11 +28,19 @@
     {
       "content": "The discoveries of H3S at 203 K and LaH10 at 250 K established that hydrogen-rich compounds under extreme pressure can achieve very high superconducting Tc via the conventional BCS mechanism. This validated the hydride route and motivated searches for even higher Tc by chemical tuning.",
       "content_hash": "49d9bc6f1a77bfc34d67eec1b2ef10940b5dd5b184b7bd07ca9b65798832f724",
-      "declaration_index": 4,
+      "declaration_index": 2,
       "exported": false,
       "id": "github:csh_superconductivity::hydride_route_validated",
       "label": "hydride_route_validated",
       "metadata": {
+        "gaia": {
+          "provenance": {
+            "referenced_claims": [
+              "hydrogen_materials_prospect",
+              "rtsc_prospect"
+            ]
+          }
+        },
         "prior": 0.95,
         "prior_justification": "H3S and LaH10 independently confirmed by multiple groups; hydride route firmly established."
       },
@@ -68,7 +52,7 @@
     {
       "content": "The C-S-H system was targeted by mixing methane (CH4) into the H2S + H2 precursor mixture for H3S at low pressures. The rationale was that molecular exchange within the van der Waals solid assemblage could produce hydrogen-rich compounds with potentially higher Tc than H3S. Carbon introduction was motivated by the desire to chemically tune the H-S system toward higher critical temperatures.",
       "content_hash": "36c901afb427628ab2a39d6ce4ad14e02866f78da5de4422e3c24d0f9bd59631",
-      "declaration_index": 5,
+      "declaration_index": 3,
       "exported": false,
       "id": "github:csh_superconductivity::csh_design_rationale",
       "label": "csh_design_rationale",
@@ -89,7 +73,7 @@
     {
       "content": "Samples were prepared by photochemical synthesis from elemental precursors (C + S + H2) in the DAC, using green laser irradiation to drive the reaction. This is a non-standard synthesis approach — most high-pressure hydride studies use direct compression of molecular precursors or laser heating.",
       "content_hash": "23fe72344bbb87becfc55fed588bf5f345fd281814e2615c6eeb5f4a949e81bb",
-      "declaration_index": 6,
+      "declaration_index": 4,
       "exported": false,
       "id": "github:csh_superconductivity::photochemical_synthesis",
       "label": "photochemical_synthesis",
@@ -101,7 +85,7 @@
     {
       "content": "Does the photochemically synthesized carbonaceous sulfur hydride (C-S-H) system exhibit room-temperature superconductivity under high pressure, and if so, is the evidence robust?",
       "content_hash": "e4b09546b4f9296055315991421e10c98e0b033a7a067ab836dc6466d06e93d8",
-      "declaration_index": 7,
+      "declaration_index": 5,
       "exported": false,
       "id": "github:csh_superconductivity::main_question",
       "label": "main_question",
@@ -252,6 +236,71 @@
       "type": "claim"
     },
     {
+      "content": "Since H₂S has only a moderate hydrogen content, high-Tc superconductivity can be expected in a wide range of hydrogen-containing materials. Candidates include carbon-based materials (fullerenes, aromatic hydrocarbons, graphanes) which could potentially be turned superconducting by doping or gating instead of extreme pressure. Hydrogen atoms are essential for providing high-frequency phonon modes and strong electron-phonon coupling.",
+      "content_hash": "e4598769825a6ab9e01feb0c2145aba60409cdc2ac97da0e3922a187fe0d0018",
+      "declaration_index": 1,
+      "exported": false,
+      "id": "github:h3s_superconductivity::hydrogen_materials_prospect",
+      "label": "hydrogen_materials_prospect",
+      "module": "implications",
+      "parameters": [],
+      "title": "Prospect for Hydrogen-Based Superconductors",
+      "type": "claim"
+    },
+    {
+      "content": "Room-temperature superconductivity (273 K) appears achievable in hydrogen-rich materials at high pressure. The leap of ~50 K above the H₃S record (203 K → 250 K) demonstrates rapid progress. Theoretical predictions for YH₁₀ (Tc = 303-326 K at 250 GPa) motivate further experiments. Carbon-based materials with high hydrogen content offer a potential path toward ambient-pressure superconductivity.",
+      "content_hash": "b770d717e7a1664448231312b7bf3ccb6c5de8c6b78bc742f1db765c5125adfd",
+      "declaration_index": 1,
+      "exported": false,
+      "id": "github:lah10_superconductivity::rtsc_prospect",
+      "label": "rtsc_prospect",
+      "module": "implications",
+      "parameters": [],
+      "title": "Room-Temperature SC Prospect",
+      "type": "claim"
+    },
+    {
+      "content": "all_true(github:h3s_superconductivity::hydrogen_materials_prospect,github:lah10_superconductivity::rtsc_prospect)",
+      "content_hash": "e5fc98f2dd1e96b308bad4749ae8b1400b41b9d453299c155b154d84a98ad579",
+      "exported": false,
+      "id": "github:csh_superconductivity::__conjunction_result_946bea51",
+      "label": "__conjunction_result_946bea51",
+      "metadata": {
+        "canonical_name": "all_true(github:h3s_superconductivity::hydrogen_materials_prospect,github:lah10_superconductivity::rtsc_prospect)",
+        "generated": true,
+        "generated_kind": "helper_claim",
+        "helper_kind": "conjunction_result",
+        "helper_visibility": "formal_internal",
+        "intermediate_role": "conjunction_result",
+        "owning_strategy_id": "lcs_b0f3d30c0639ed16",
+        "owning_strategy_type": "deduction",
+        "visibility": "formal_internal"
+      },
+      "parameters": [],
+      "type": "claim"
+    },
+    {
+      "content": "implies(github:csh_superconductivity::__conjunction_result_946bea51,github:csh_superconductivity::hydride_route_validated)",
+      "content_hash": "a898c1b414714f9f00c42bcaf6eb95066250633ad1b69c0431ae5a61f9661983",
+      "exported": false,
+      "id": "github:csh_superconductivity::__implication_result_b558906e",
+      "label": "__implication_result_b558906e",
+      "metadata": {
+        "canonical_name": "implies(github:csh_superconductivity::__conjunction_result_946bea51,github:csh_superconductivity::hydride_route_validated)",
+        "generated": true,
+        "generated_kind": "helper_claim",
+        "helper_kind": "implication_result",
+        "helper_visibility": "formal_internal",
+        "intermediate_role": "implication_result",
+        "owning_strategy_id": "lcs_b0f3d30c0639ed16",
+        "owning_strategy_type": "deduction",
+        "prior": 0.95,
+        "visibility": "formal_internal"
+      },
+      "parameters": [],
+      "type": "claim"
+    },
+    {
       "content": "implies(github:csh_superconductivity::hydride_route_validated,github:csh_superconductivity::csh_design_rationale)",
       "content_hash": "ef788d5a7258303c600cd4af0c35c2d79b2e619c8d1d70db4b0413362145da0e",
       "exported": false,
@@ -370,8 +419,45 @@
   "strategies": [
     {
       "background": [
-        "github:csh_superconductivity::h3s_precedent",
-        "github:csh_superconductivity::lah10_precedent",
+        "github:csh_superconductivity::bcs_theory"
+      ],
+      "conclusion": "github:csh_superconductivity::hydride_route_validated",
+      "formal_expr": {
+        "operators": [
+          {
+            "conclusion": "github:csh_superconductivity::__conjunction_result_946bea51",
+            "operator": "conjunction",
+            "variables": [
+              "github:h3s_superconductivity::hydrogen_materials_prospect",
+              "github:lah10_superconductivity::rtsc_prospect"
+            ]
+          },
+          {
+            "conclusion": "github:csh_superconductivity::__implication_result_b558906e",
+            "operator": "implication",
+            "variables": [
+              "github:csh_superconductivity::__conjunction_result_946bea51",
+              "github:csh_superconductivity::hydride_route_validated"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "formalization_template": "deduction",
+        "generated_formal_expr": true,
+        "prior": 0.95,
+        "reason": "The H3S discovery established that hydrogen-rich materials are high-Tc superconductors (@hydrogen_materials_prospect), and the LaH10 result showed room-temperature SC appears achievable (@rtsc_prospect). Together, these validated the hydride route and motivated further chemical exploration."
+      },
+      "premises": [
+        "github:h3s_superconductivity::hydrogen_materials_prospect",
+        "github:lah10_superconductivity::rtsc_prospect"
+      ],
+      "scope": "local",
+      "strategy_id": "lcs_b0f3d30c0639ed16",
+      "type": "deduction"
+    },
+    {
+      "background": [
         "github:csh_superconductivity::bcs_theory"
       ],
       "conclusion": "github:csh_superconductivity::csh_design_rationale",

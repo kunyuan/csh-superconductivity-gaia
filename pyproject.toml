@@ -5,6 +5,8 @@ description = "Gaia knowledge package: Room-temperature superconductivity in a c
 requires-python = ">=3.12"
 dependencies = [
     "gaia-lang>=0.3.0",
+    "h3s-superconductivity-gaia",
+    "lah10-superconductivity-gaia",
 ]
 
 [tool.gaia]
@@ -20,3 +22,5 @@ packages = ["src/csh_superconductivity"]
 
 [tool.uv.sources]
 gaia-lang = { path = "../Gaia", editable = true }
+h3s-superconductivity-gaia = { path = "../h3s-superconductivity-gaia", editable = true }
+lah10-superconductivity-gaia = { path = "../lah10-superconductivity-gaia", editable = true }

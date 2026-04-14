@@ -14,9 +14,7 @@ from .background import (
     bcs_theory,
     csh_design_rationale,
     diamond_anvil_cell,
-    h3s_precedent,
     hydride_route_validated,
-    lah10_precedent,
     main_question,
     photochemical_synthesis,
 )
