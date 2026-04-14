@@ -1,35 +1,35 @@
 {
   "exports": [
     {
-      "content": "The Snider et al. C-S-H paper exhibited data processing integrity failures: non-standard background subtraction that statistical analysis suggests was reversed (adding rather than subtracting background), 'raw' data that were not actually raw, and anomalies present at all measured pressures. These issues represent a fundamental breakdown in scientific data reporting.",
-      "content_hash": "d0ca6dfc92af923b51caeac14a20aef3f0faad54a6be50f855b4af3b73e2751f",
-      "label": "data_integrity_failure",
-      "qid": "github:csh_superconductivity::data_integrity_failure",
+      "content": "The original paper presented four lines of evidence for room-temperature superconductivity in C-S-H: (1) zero resistance at 287.7 K, (2) diamagnetic susceptibility signal, (3) magnetic field suppression of Tc, and (4) 13C isotope effect. Together these were claimed to establish bulk superconductivity at room temperature.",
+      "content_hash": "b6b105b034e0335ea773197f0b374db651b59ad737102e2470b504245a10db45",
+      "label": "original_sc_evidence",
+      "qid": "github:csh_superconductivity::original_sc_evidence",
       "type": "claim"
     },
     {
-      "content": "Room-temperature superconductivity was achieved in a carbonaceous sulfur hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa, as reported by Snider et al. in Nature 586, 373 (2020). This would represent a major milestone — the first observation of superconductivity above room temperature.",
-      "content_hash": "8b765c20712eeadb76e3c116f83c2671241637fbfd6f532f86c458cda19245be",
-      "label": "original_sc_claim",
-      "qid": "github:csh_superconductivity::original_sc_claim",
+      "content": "Four-probe electrical resistance measurements in the DAC showed sharp drops to zero resistance at multiple pressures in the C-S-H system. The maximum transition temperature observed was Tc = 287.7 +/- 1.2 K (approximately 15 C) at 267 +/- 10 GPa — room temperature.",
+      "content_hash": "ff174d32bd1c4056acef217076e8fa447826e34ce7084ca8bdc1308afda25581",
+      "label": "resistance_observation",
+      "qid": "github:csh_superconductivity::resistance_observation",
       "type": "claim"
     },
     {
-      "content": "Room-temperature superconductivity in the C-S-H system, as claimed by Snider et al., has NOT been confirmed. The magnetic susceptibility evidence — essential for establishing bulk SC — was shown to be unreliable. Two independent replication attempts failed. The paper was retracted by Nature. The resistance data alone are insufficient to establish the claim.",
-      "content_hash": "579f0d8fd6a2657c086354415995587284bb7d083ebf9405fc11613ea1b1730b",
-      "label": "rtsc_not_confirmed",
-      "qid": "github:csh_superconductivity::rtsc_not_confirmed",
+      "content": "Room-temperature superconductivity was achieved in a carbonaceous sulfur hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa. This represents the first observation of superconductivity above room temperature.",
+      "content_hash": "afa7c4a57e9f005bda223b62ff1a6d253de51aec0b084cdfce7a78e5cf128f37",
+      "label": "room_temperature_sc",
+      "qid": "github:csh_superconductivity::room_temperature_sc",
       "type": "claim"
     },
     {
-      "content": "The magnetic susceptibility data in Snider et al. are unreliable and cannot be used as evidence for superconductivity. The non-standard, user-defined background subtraction procedure was not specified in the paper, the data show statistical signatures of fabrication, and no valid processing method can reproduce the published results from the reported raw measurements.",
-      "content_hash": "ddbc68eac8f38a21675601f6f1c86392e0d9f0b0ff2ff6e3c353df1f36d4fd5a",
-      "label": "susceptibility_data_invalid",
-      "qid": "github:csh_superconductivity::susceptibility_data_invalid",
+      "content": "AC magnetic susceptibility measurements up to 190 GPa showed a diamagnetic signal consistent with the Meissner effect at temperatures matching the resistance-determined Tc. This provides independent confirmation of bulk superconductivity in C-S-H.",
+      "content_hash": "09594f65a94f8e70c3dc0e3885760cda18b4bd21bb2df59284876afef30517f9",
+      "label": "susceptibility_observation",
+      "qid": "github:csh_superconductivity::susceptibility_observation",
       "type": "claim"
     }
   ],
-  "ir_hash": "sha256:77d7779a2f1642556a0ca82557e98dcd0c4e44c76b1e16fe8f3774c13ac3c7c5",
+  "ir_hash": "sha256:925f58e68418efbc86c797c717f72901a7d49b666ac958079fe20f8b5a15a7e6",
   "manifest_schema_version": 1,
   "package": "csh-superconductivity",
   "version": "0.1.0"

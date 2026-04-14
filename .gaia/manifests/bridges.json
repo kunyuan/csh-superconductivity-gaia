@@ -1,6 +1,6 @@
 {
   "bridges": [],
-  "ir_hash": "sha256:77d7779a2f1642556a0ca82557e98dcd0c4e44c76b1e16fe8f3774c13ac3c7c5",
+  "ir_hash": "sha256:925f58e68418efbc86c797c717f72901a7d49b666ac958079fe20f8b5a15a7e6",
   "manifest_schema_version": 1,
   "package": "csh-superconductivity",
   "version": "0.1.0"

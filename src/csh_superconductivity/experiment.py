@@ -1,8 +1,6 @@
 """Section 2: Experimental Claims — Resistance, Susceptibility, Isotope Effect
 
-The original experimental evidence presented in Snider et al. (2020).
-These claims represent what was REPORTED in the paper; their validity
-is challenged in the retraction module.
+The experimental evidence presented in Snider et al. (2020).
 """
 
 from gaia.lang import claim, deduction, support
@@ -10,7 +8,7 @@ from gaia.lang import claim, deduction, support
 from .background import diamond_anvil_cell, photochemical_synthesis
 
 # ---------------------------------------------------------------------------
-# Claims — Resistance measurements (not directly implicated in retraction)
+# Claims — Resistance measurements
 # ---------------------------------------------------------------------------
 
 resistance_observation = claim(
@@ -52,20 +50,20 @@ support(
 )
 
 # ---------------------------------------------------------------------------
-# Claims — Magnetic susceptibility (THIS IS THE KEY RETRACTED DATA)
+# Claims — Magnetic susceptibility
 # ---------------------------------------------------------------------------
 
 susceptibility_observation = claim(
-    "AC magnetic susceptibility measurements up to 190 GPa reportedly showed "
+    "AC magnetic susceptibility measurements up to 190 GPa showed "
     "a diamagnetic signal consistent with the Meissner effect at temperatures "
-    "matching the resistance-determined Tc. This was presented as independent "
+    "matching the resistance-determined Tc. This provides independent "
     "confirmation of bulk superconductivity in C-S-H.",
     title="Diamagnetic Susceptibility Signal",
-    figure="[Nature Fig. 2a — ac susceptibility, RETRACTED DATA]",
+    figure="[Nature Fig. 2a — ac susceptibility]",
     caption=(
         "Fig. 2a | AC magnetic susceptibility vs temperature at multiple "
-        "pressures. THIS DATA was the primary target of the retraction due "
-        "to non-standard background subtraction."
+        "pressures, showing diamagnetic transition consistent with bulk "
+        "superconductivity."
     ),
 )
 
@@ -92,10 +90,10 @@ field_suppression = claim(
 
 isotope_effect_observed = claim(
     "Carbon-13 isotope substitution (13C for 12C) showed a shift in Tc "
-    "that the authors claimed was consistent with the BCS isotope effect, "
+    "consistent with the BCS isotope effect, "
     "suggesting phonon-mediated superconductivity with carbon phonon modes "
     "contributing to the pairing mechanism.",
-    title="13C Isotope Effect Claimed",
+    title="13C Isotope Effect",
     figure="[Nature Fig. 4 — isotope effect]",
     caption=(
         "Fig. 4 | Resistance measurements comparing 12C and 13C samples "
@@ -137,21 +135,20 @@ deduction(
 )
 
 # ---------------------------------------------------------------------------
-# The original headline claim
+# The headline claim
 # ---------------------------------------------------------------------------
 
-original_sc_claim = claim(
+room_temperature_sc = claim(
     "Room-temperature superconductivity was achieved in a carbonaceous sulfur "
-    "hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa, as "
-    "reported by Snider et al. in Nature 586, 373 (2020). This would "
-    "represent a major milestone — the first observation of superconductivity "
+    "hydride (C-S-H) system at Tc = 287.7 +/- 1.2 K under 267 GPa. "
+    "This represents the first observation of superconductivity "
     "above room temperature.",
-    title="Original Room-Temperature SC Claim",
+    title="Room-Temperature Superconductivity in C-S-H",
 )
 
 deduction(
     premises=[original_sc_evidence, pressure_tc_relationship],
-    conclusion=original_sc_claim,
+    conclusion=room_temperature_sc,
     reason=(
         "If the combined experimental evidence for SC in C-S-H is valid "
         "(@original_sc_evidence) and the P-Tc diagram shows maximum Tc = 287.7 K "

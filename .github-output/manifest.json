@@ -1,31 +1,27 @@
 {
   "package_name": "csh_superconductivity",
-  "generated_at": "2026-04-14T02:03:53.723829+00:00",
+  "generated_at": "2026-04-14T02:40:50.085916+00:00",
   "wiki_pages": [
     "Home.md",
     "Module-Root.md",
     "Module-background.md",
-    "Module-conclusions.md",
     "Module-experiment.md",
-    "Module-retraction.md",
     "Inference-Results.md"
   ],
   "pages_sections": [
     "background.md",
-    "experiment.md",
-    "retraction.md",
-    "conclusions.md"
+    "experiment.md"
   ],
   "assets": [
     "paper.md"
   ],
   "exported_conclusions": [
-    "data_integrity_failure",
-    "original_sc_claim",
-    "rtsc_not_confirmed",
-    "susceptibility_data_invalid"
+    "original_sc_evidence",
+    "resistance_observation",
+    "room_temperature_sc",
+    "susceptibility_observation"
   ],
-  "total_claims": 26,
-  "total_beliefs": 31,
+  "total_claims": 10,
+  "total_beliefs": 15,
   "readme_placeholders": []
 }
